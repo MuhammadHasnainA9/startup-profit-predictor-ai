@@ -224,17 +224,13 @@ def main():
     csv = df_report.to_csv(index=False).encode('utf-8')
     st.download_button("Download CSV", data=csv, file_name="startup_report.csv", mime='text/csv')
 
-    <style>
-.footer-text {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
-    color: #555;
-}
-</style>
+
     # FOOTER
-    st.markdown('<div class="footer-text">🚀 Built with Machine Learning & Streamlit | GitHub Repo</div>', unsafe_allow_html=True)
-st.markdown('<div class="footer-text">👨‍💻 Made by Husnain</div>', unsafe_allow_html=True)
+st.markdown("---")
+
+col1, col2, col3 = st.columns([1,2,1])  # middle column is wider
+col2.markdown("🚀 Built with Machine Learning & Streamlit | GitHub Repo")
+col2.markdown("👨‍💻 Made by Husnain")
 
 if __name__ == "__main__":
     main()
