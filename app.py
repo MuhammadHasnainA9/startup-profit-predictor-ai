@@ -226,7 +226,8 @@ def main():
 
     # FOOTER
     st.markdown("---")
-    st.markdown("🚀 Built with Machine Learning & Streamlit | GitHub Repo")
+st.markdown('<p style="text-align:center;">🚀 Built with Machine Learning & Streamlit | GitHub Repo</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align:center;">👨‍💻 Made by Husnain</p>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
