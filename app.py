@@ -224,8 +224,14 @@ def main():
     csv = df_report.to_csv(index=False).encode('utf-8')
     st.download_button("Download CSV", data=csv, file_name="startup_report.csv", mime='text/csv')
 
- def main():
-    # ... all previous code inside main()
+# ---------------- MAIN APP ----------------
+def main():
+    set_custom_css()
+    model_data = load_model()
+    if model_data is None:
+        st.stop()
+
+    # ... all your existing code inside main()
 
     # FOOTER
     st.markdown("---")
