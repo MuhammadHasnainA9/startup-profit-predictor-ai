@@ -225,12 +225,12 @@ def main():
     st.download_button("Download CSV", data=csv, file_name="startup_report.csv", mime='text/csv')
 
 
-    # FOOTER
-st.markdown("---")
+    
+   # FOOTER
+   st.markdown("---")
+   st.markdown('<p style="text-align: center; font-size: 0.9rem;">🚀 Built with Machine Learning & Streamlit | GitHub Repo</p>', unsafe_allow_html=True)
+   st.markdown('<p style="text-align: center; font-size: 0.9rem;">💡 Designed & Built by Husnain</p>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([1,2,1])  # middle column is wider
-col2.markdown("🚀 Built with Machine Learning & Streamlit | GitHub Repo")
-col2.markdown("👨‍💻 Made by Husnain")
 
 if __name__ == "__main__":
     main()
