@@ -1,7 +1,19 @@
 # AI-Powered Startup Profit Predictor - Dependencies
 # Install with: pip install -r requirements.txt
 
+# Streamlit - Web app framework
 streamlit
+
+# Pandas - Data handling and CSV processing
 pandas
+
+# Scikit-learn - Machine Learning models (Linear Regression, Random Forest)
 scikit-learn
+
+# Matplotlib - Basic plotting (graphs, charts)
 matplotlib
+
+# Seaborn - Advanced visualization (optional, for better graphs)
+seaborn
+
+# Pickle comes built-in with Python, no need to install
