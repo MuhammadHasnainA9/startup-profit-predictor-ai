@@ -4,6 +4,12 @@ This app provides an interactive interface for predicting startup profits
 with AI-powered business suggestions and visualizations.
 """
 
+"""
+AI-Powered Startup Profit Prediction - Streamlit Web Application
+This app provides an interactive interface for predicting startup profits
+with AI-powered business suggestions and visualizations.
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -224,20 +230,11 @@ def main():
     csv = df_report.to_csv(index=False).encode('utf-8')
     st.download_button("Download CSV", data=csv, file_name="startup_report.csv", mime='text/csv')
 
-# ---------------- MAIN APP ----------------
-def main():
-    set_custom_css()
-    model_data = load_model()
-    if model_data is None:
-        st.stop()
-
-    # ... all your existing code inside main()
-
     # FOOTER
     st.markdown("---")
     st.markdown('<p style="text-align: center; font-size: 0.9rem;">🚀 Built with Machine Learning & Streamlit | GitHub Repo</p>', unsafe_allow_html=True)
     st.markdown('<p style="text-align: center; font-size: 0.9rem;">💡 Designed & Built by Husnain</p>', unsafe_allow_html=True)
 
-
+# ---------------- RUN APP ----------------
 if __name__ == "__main__":
     main()
